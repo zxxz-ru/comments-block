@@ -30,7 +30,7 @@ export const Editor = styled.textarea`
 /** Container for all elements needed for comments-block */
 export const MainBlock = styled.div`
   padding: 0.5em 1em;
-  border: 2px solid rgba(242, 242, 242, 0.8);
+  border: 2px solid rgba(242, 242, 242, 1);
   border-radius: 1em;
   box-shadow: 3px 3px 3px #f4f4f4;
   margin: 1em;
@@ -39,9 +39,11 @@ export const MainBlock = styled.div`
 /** Main comment block container for Ava, Message */
 export const CommentBlock = styled.div`
   padding: 0.5em 1em;
-  border: 2px solid rgba(244, 244, 244, 0.6);
+  border: 2px solid rgba(244, 244, 244, 0.8);
   border-radius: 1.25em;
   box-shadow: 1px 1px 2px #f4f4f4;
+  box-sizing: border-box;
+  min-height: 4.8em;
   margin: 2em auto;
   width: 95%;
   font-size: 14px;
@@ -54,7 +56,7 @@ export const LikesBlock = styled.div`
 /** Need it to push post button to right */
 export const PostButtonBlock = styled.div`
   width: 95%;
-  margin: 0 2.5%;
+  margin: 0.1875em 2.5%;
   position: relative;
   display: flex;
   justify-content: flex-end;
