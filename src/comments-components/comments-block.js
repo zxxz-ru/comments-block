@@ -4,7 +4,10 @@ import CommentBlockComponent from './comment-block-component';
 import {MainBlock} from './elements.js'; 
 import {model} from './utils.js'; 
 
-/** Main Container to hold everything */
+/** Main Container to hold everything.
+ * imported model is for testing. Data will be obtained from server in
+ * production.
+ * */
 export default class CommentsBlock extends React.Component {
   constructor(props) {
   super(props);
@@ -17,9 +20,9 @@ export default class CommentsBlock extends React.Component {
     console.log(model);
     const items = model.map((c) => {
         const id = c.id;
-       const  ava = c.post.avatar;
-       const  message = c.post.msg;
-       const  likes = c.post.likes;
+       const  ava = c.avatar;
+       const  message = c.msg;
+       const  likes = c.likes;
        const  likes_handler = null;
       
       return ( <CommentBlockComponent
