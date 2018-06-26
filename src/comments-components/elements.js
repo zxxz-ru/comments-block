@@ -34,6 +34,7 @@ export const MainBlock = styled.div`
   border-radius: 1em;
   box-shadow: 3px 3px 3px #f4f4f4;
   margin: 1em;
+min-width: 15em;
 
 `;
 /** Main comment block container for Ava, Message */
@@ -46,14 +47,37 @@ export const CommentBlock = styled.div`
   min-height: 4.8em;
   margin: 2em auto;
   width: 95%;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
 `;
 /** Block to display likes */
 export const LikesBlock = styled.div`
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
 `;
-/** Need it to push post button to right */
+
+/** Span to display number of likes in LikesBlockComponent. Used in
+ * likes-block-component.js
+ */
+export const LikesBadge = styled.span`
+font-size: 1.3em;
+background-color: #a6a6d9;
+color: black;
+padding: 0.3em;
+margin-right: 0.5em;
+  border-radius: 1.25em;
+`;
+
+/** Image with hearts to click on for adding more likes.
+ * Used in likes-block-component.js
+ */
+export const LikesImage = styled.img`
+   height: 1.9em;
+width: 1.9em;
+`;
+
+
+/**Container for PostButton.  Need it to push post button to right */
 export const PostButtonBlock = styled.div`
   width: 95%;
   margin: 0.1875em 2.5%;

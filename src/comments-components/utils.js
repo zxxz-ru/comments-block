@@ -2,8 +2,10 @@ export const likes_img = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAy
 export const model = {posts:[
      {id: 1, post:{avatar:
  "http://www.avatarsdb.com/avatars/normal_people_scare_me.jpg",
-         msg:"Here comes the Message.",
-         isTop:true, likes:1, sub_posts:[
+         msg:"lorem ipsum, quia dolor sit, amet, consectetur, adipisci\
+       velit, sed quia non numquam eius modi tempora incidunt, ut labore\
+       et dolore magnam aliquam quaerat voluptatem.",
+         isTop:true, likes:4, sub_posts:[
              {id: 1.1, post:{
  avatar:"http://www.avatarsdb.com/avatars/normal_people_scare_me.jpg",
                  msg:"Very good Message.",
@@ -16,7 +18,9 @@ export const model = {posts:[
      }, // top post with sub posts
      {id:2, post:{
      avatar:"http://www.avatarsdb.com/avatars/normal_people_scare_me.jpg",
-         msg:"This Message is going to be even better.",
+         msg:"Quis autem vel eum iure reprehenderit, qui in ea\
+       voluptate velit esse, quam nihil molestiae consequatur, vel illum,\
+       qui dolorem eum fugiat, quo voluptas nulla pariatur?",
          isTop:true, likes:3}
  }, // top message without sub posts
  
