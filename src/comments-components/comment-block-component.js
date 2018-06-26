@@ -13,7 +13,7 @@ export default class CommentBlockComponent extends React.Component {
     <CommentBlock>
       <Ava src={ava_img} ></Ava>
       <Message>{message}</Message>
-      <LikesBlockComponent likes={likes} clickHandler={likes_handler}>
+      <LikesBlockComponent id={id} likes={likes} likes_handler={likes_handler}>
       </LikesBlockComponent> 
       </CommentBlock>
     );
